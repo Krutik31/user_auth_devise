@@ -30,4 +30,11 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  welcome: "Welcome %{username}, You are logged in!"
+  login_message:
+    kindly: "Kindly"
+    or: "or"
+    login: "Login"
+    register: "Register yourself"
+  logout: "Sign out..."
+  username: "Username"
