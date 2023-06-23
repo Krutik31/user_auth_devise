@@ -1,8 +1,8 @@
 <div class="text-center">
   <% if user_signed_in? %>
-    <h3>Welcome <%= current_user.username %>, You are logged in!</h3>
-    <h5><%= link_to "Sign out...", destroy_user_session_path, data: {turbo_method: :delete} %></h5>
+    <h3><%= t("welcome", username: current_user.username)  %></h3>
+    <h5><%= link_to t("logout"), destroy_user_session_path, data: {turbo_method: :delete} %></h5>
   <% else %>
-    <h3>Kindly <%= link_to "Login", new_user_session_path %> or <%= link_to "Register yourself", new_user_registration_path %>...</h3>
+    <h3><%= t("login_message.kindly") %> <%= link_to t("login_message.login"), new_user_session_path %> <%= t("login_message.or") %> <%= link_to t("login_message.register"), new_user_registration_path  %>...</h3>
   <% end %>
 </div>

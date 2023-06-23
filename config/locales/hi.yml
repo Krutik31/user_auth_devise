@@ -1,0 +1,9 @@
+hi:
+  welcome: "स्वागत है %{username}, आप लॉग इन हैं!"
+  login_message:
+    kindly: "कृपया"
+    or: "या"
+    login: "लॉग इन करें"
+    register: "अपने आप को पंजीकृत करें"
+  logout: "साइन आउट..."
+  username: "उपयोगकर्ता नाम"
